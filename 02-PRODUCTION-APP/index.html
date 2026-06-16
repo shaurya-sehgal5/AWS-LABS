@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Internal CSS Example</title>
+    
+    <!-- Internal CSS using the style tag -->
+    <style>
+        /* Base Settings and Variables */
+        :root {
+            --primary-color: #4f46e5;
+            --text-color: #1f2937;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Grid Layout */
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Card Component */
+        .card {
+            background-color: var(--card-bg);
+            flex: 1 1 calc(33.333% - 20px);
+            min-width: 280px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            margin-bottom: 12px;
+            color: var(--primary-color);
+        }
+
+        /* Dynamic Button */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Welcome to My Website</h1>
+            <p>A clean page built with HTML and internal CSS.</p>
+        </header>
+
+        <main class="grid">
+            <!-- Card 1 -->
+            <section class="card">
+                <h2>Clean Design</h2>
+                <p>Using modern system fonts guarantees that your layout loads faster on all devices.</p>
+                <a href="#" class="btn">Read More</a>
+            </section>
+
+            <!-- Card 2 -->
+            <section class="card">
+                <h2>Responsive Flexbox</h2>
+                <p>The card layout dynamically adapts perfectly to smartphones, tablets, and wide desktop screens.</p>
+                <a href="#" class="btn">Explore Layout</a>
+            </section>
+
+            <!-- Card 3 -->
+            <section class="card">
+                <h2>CSS Variables</h2>
+                <p>Colors are centrally managed via root variables, making global changes instantaneous.</p>
+                <a href="#" class="btn">View Themes</a>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
