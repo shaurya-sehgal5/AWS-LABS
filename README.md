@@ -1,207 +1,249 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/AWS-Cloud%20Engineering-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"/>
-<img src="https://img.shields.io/badge/DevOps-Hands--On%20Labs-0A66C2?style=for-the-badge&logo=linux&logoColor=white"/>
-<img src="https://img.shields.io/badge/Labs-20%20Projects-28a745?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=FF9900&height=120&section=header&text=AWS-LABS&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Production-Style%20Cloud%20Infrastructure%20Labs&descAlignY=60&descSize=16" width="100%"/>
 
-# ☁️ AWS LABS
 
-### Hands-On AWS Cloud Engineering Portfolio
 
-> **20 production-style labs** covering networking, compute, storage, security, serverless, and infrastructure-as-code — each documented with architecture diagrams, implementation steps, real commands, and troubleshooting notes.
+<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
+<img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Labs%20Completed-7-brightgreen?style=flat-square"/>
+<img src="https://img.shields.io/badge/Services%20Covered-20%2B-blue?style=flat-square"/>
+<img src="https://img.shields.io/badge/Status-Actively%20Building-FF9900?style=flat-square"/>
+<img src="https://img.shields.io/badge/Focus-DevOps%20%7C%20SRE%20%7C%20Cloud-blueviolet?style=flat-square"/>
+
+<br/><br/>
+
+> **Real infrastructure. Real problems. Real fixes. Documented like a production engineer.**
 
 </div>
 
 ---
 
-## 🎯 Why This Repository Exists
+## 🔍 What This Repository Is
 
-Most cloud certifications test theory. This repository tests **execution**.
+This isn't a certification prep repo. Every lab here simulates how cloud infrastructure is actually built and maintained inside engineering teams.
 
-Every lab here is built from scratch, manually configured, and documented the way real engineers document their work — with architecture context, the exact CLI commands used, what broke, and how it was fixed. The goal is to build the kind of AWS muscle memory that shows up in production environments.
+Each lab goes through the full lifecycle — **design → provision → break → debug → fix → document** — because that's what cloud engineering actually looks like on the job.
 
----
-
-## 📋 Lab Index
-
-| # | Lab | AWS Services | Status |
-|:-:|-----|-------------|:------:|
-| 01 | **VPC & Network ACLs** | VPC, Subnets, Route Tables, NACLs | ✅ Completed |
-| 02 | **ALB-ASG-BASTION** | EC2, SGs, ELB, Key Pairs, AMIs | ✅ Completed |
-| 03 | **S3 & IAM Security** | Bucket Policies, Public Access Control, Static Hosting | ✅ Completed |
-| 04 | **S3 Static Website Hosting** | S3, Bucket Policies, CloudFront | ⏳ In Progress |
-| 05 | **S3 Versioning & Lifecycle** | S3, Lifecycle Rules, Glacier | ⏳ In Progress |
-| 06 | **Elastic Load Balancer** | ALB, Target Groups, Health Checks | ⏳ In Progress |
-| 07 | **Auto Scaling Groups** | ASG, Launch Templates, Scaling Policies | ⏳ In Progress |
-| 08 | **Route 53** | DNS, Routing Policies, Health Checks | ⏳ In Progress |
-| 09 | **NAT Gateway** | NAT GW, Elastic IP, Private Subnets | ⏳ In Progress |
-| 10 | **Bastion Host** | EC2, SSH Tunneling, Jump Server | ⏳ In Progress |
-| 11 | **Elastic Block Store (EBS)** | EBS, Snapshots, Volume Types | ⏳ In Progress |
-| 12 | **Elastic File System (EFS)** | EFS, Mount Targets, NFS | ⏳ In Progress |
-| 13 | **AWS CLI** | CLI, Profiles, Automation Scripts | ⏳ In Progress |
-| 14 | **CloudWatch** | Metrics, Alarms, Log Groups, Dashboards | ⏳ In Progress |
-| 15 | **CloudTrail** | Audit Logs, S3 Integration, Event History | ⏳ In Progress |
-| 16 | **SNS & SQS** | Topics, Queues, Fan-Out Pattern | ⏳ In Progress |
-| 17 | **Lambda Functions** | Serverless, Triggers, IAM Roles | ⏳ In Progress |
-| 18 | **API Gateway** | REST API, Lambda Integration, Stages | ⏳ In Progress |
-| 19 | **CloudFormation** | IaC, Stacks, Templates, Drift Detection | ⏳ In Progress |
-| 20 | **End-to-End AWS Project** | Multi-service Production Architecture | ⏳ In Progress |
+The documentation standard mirrors how production changes are tracked: architecture diagrams, commands with context, real errors encountered, and how they were resolved. Not just "it worked."
 
 ---
 
-## 🗂️ Repository Structuree
+## ⚡ Lab Index
+
+| # | Lab | Core Services | Difficulty | Status |
+|---|-----|--------------|------------|--------|
+| [01](./01-VPC-NACL/) | **VPC & Network ACL** | VPC · Public Subnet · EC2 · Security Groups · NACL | 🟡 Intermediate | ✅ Done |
+| [02](./02-ALB-ASG-BASTION/) | **ALB + Auto Scaling + Bastion** | ALB · ASG · Launch Template · NAT Gateway · Bastion | 🟡 Intermediate | ✅ Done |
+| [03](./03-S3-IAM-HOSTING/) | **S3, IAM & Static Hosting** | S3 · IAM · Bucket Policies · Static Website Hosting | 🟢 Foundational | ✅ Done |
+| [04](./04-CODEPIPELINE-CODEDEPLOY/) | **CI/CD Pipeline** | CodePipeline · CodeBuild · CodeDeploy · Docker · SSM | 🔴 Advanced | ✅ Done |
+| [05](./05-CLOUDWATCH-LAMBDA/) | **CloudWatch & Lambda Automation** | CloudWatch · SNS · Lambda · IAM · Cost Optimization | 🟡 Intermediate | ✅ Done |
+| [06](./06-EKS-ALB-INGRESS/) | **Amazon EKS + ALB Ingress** | EKS · IAM OIDC · Helm · AWS Load Balancer Controller | 🔴 Advanced | ✅ Done |
+| [07](./07-TERRAFORM-ALB/) | **Terraform Infrastructure** | Terraform · VPC · EC2 · ALB · Security Groups · S3 | 🔴 Advanced | ✅ Done |
+| [08](./08-PRODUCTION-EKS/) | **Production Three-Tier EKS** | Full Stack Deployment on Amazon EKS | 🔴 Advanced | 🚧 In Progress |
+
+---
+
+## 🧠 What Each Lab Actually Covers
+
+Every lab follows the same engineering-grade documentation structure:
 
 ```
-AWS-LABS/
-│
-├── 01-VPC-NACL/
-│   ├── README.md          ← Architecture + implementation notes
-│   ├── commands.sh        ← All CLI commands used
-│   └── screenshots/       ← Console screenshots
-│
-├── 02-EC2-SecurityGroups/
-├── 03-IAM/
-├── 04-S3-Static-Website/
-├── 05-S3-Versioning/
-├── 06-Load-Balancer/
-├── 07-Auto-Scaling/
-├── 08-Route53/
-├── 09-NAT-Gateway/
-├── 10-Bastion-Host/
-├── 11-EBS/
-├── 12-EFS/
-├── 13-AWS-CLI/
-├── 14-CloudWatch/
-├── 15-CloudTrail/
-├── 16-SNS-SQS/
-├── 17-Lambda/
-├── 18-API-Gateway/
-├── 19-CloudFormation/
-└── 20-End-to-End-Project/
+📁 lab-name/
+├── README.md          ← Full implementation breakdown
+├── commands.sh        ← Every command used, with comments
+├── screenshots/       ← Visual proof of working infrastructure
+├── architecture/      ← Diagrams (draw.io / excalidraw)
+└── extras/            ← Terraform files, K8s YAMLs, scripts (where applicable)
 ```
 
-Each lab folder follows the same structure for easy navigation.
+**Documentation per lab includes:**
+- Architecture overview with component interaction
+- Step-by-step implementation with reasoning (not just commands)
+- Real errors hit during the lab and exact fix applied
+- Cost considerations and cleanup steps
+- Key learnings and what I'd do differently in production
 
 ---
 
-## 📄 Lab Documentation Standard
+## 🏗 Infrastructure Deep Dives
 
-Every lab is documented consistently — no half-finished notes:
+<details>
+<summary><b>🌐 Lab 01 — VPC & Network ACL</b></summary>
 
-| Section | What's Included |
-|---------|----------------|
-| **Objective** | What this lab covers and why it matters |
-| **Architecture** | Diagram or description of the setup |
-| **Implementation** | Step-by-step configuration walkthrough |
-| **Commands** | Every CLI command used, with context |
-| **Screenshots** | Console state at key steps |
-| **Troubleshooting** | Errors hit and how they were resolved |
-| **Key Learnings** | What this lab reinforced or revealed |
+Built a production-style VPC from scratch with:
+- Custom CIDR block, public subnet, internet gateway, and route tables
+- EC2 instance deployed inside the subnet with security group rules
+- Network ACL configured at subnet level for stateless traffic control
+- Tested allow/deny rules and compared behavior with Security Groups (stateful vs stateless)
 
----
+**Real issue hit:** NACL rule ordering causing SSH block even with correct SG — resolved by understanding that NACLs evaluate rules by number, lowest first.
 
-## 🧰 Tech Stack & Environment
+</details>
 
-| Category | Details |
-|----------|---------|
-| ☁️ Cloud Platform | AWS (Free Tier + hands-on accounts) |
-| 🐧 Operating System | Ubuntu Linux |
-| 🔧 Version Control | Git & GitHub |
-| 🐍 Scripting | Python + Bash |
-| 📐 IaC | CloudFormation |
-| 🎯 Approach | Manual → Automate → Document |
+<details>
+<summary><b>⚖️ Lab 02 — ALB + Auto Scaling Group + Bastion Host</b></summary>
 
----
+Multi-tier architecture with:
+- Application Load Balancer distributing traffic across AZs
+- Auto Scaling Group with Launch Template and scaling policies
+- NAT Gateway allowing private EC2 instances to reach the internet
+- Bastion Host in public subnet for secure SSH access to private instances
 
-## 🏗️ AWS Services Covered
+**Real issue hit:** ASG instances not registering as healthy in ALB target group — root cause was health check path mismatch. Fixed by aligning ALB health check endpoint with app response.
 
-<table>
-<tr>
-<td valign="top">
+</details>
 
-**Networking**
-- Amazon VPC
-- Route 53
-- NAT Gateway
-- Elastic Load Balancer
+<details>
+<summary><b>🗂 Lab 03 — S3, IAM & Static Website Hosting</b></summary>
 
-</td>
-<td valign="top">
+Covered IAM from first principles and S3 as both storage and a hosting layer:
+- IAM user creation, policy attachment, least-privilege principle applied
+- S3 bucket configured for public static website hosting
+- Bucket policy vs ACL behavior — tested both, documented differences
+- Explored how CloudFront would sit in front for production use
 
-**Compute & Storage**
-- Amazon EC2
-- Amazon S3
-- EBS
-- EFS
+</details>
 
-</td>
-<td valign="top">
+<details>
+<summary><b>🚀 Lab 04 — Full CI/CD Pipeline (CodePipeline + Docker)</b></summary>
 
-**Security & Identity**
-- IAM
-- Security Groups
-- NACLs
-- Bastion Host
+End-to-end automated deployment pipeline:
+- CodePipeline triggered on GitHub push
+- CodeBuild compiling and building Docker image, pushing to ECR
+- CodeDeploy deploying to EC2 with blue/green deployment config
+- Secrets managed via AWS Parameter Store (not hardcoded anywhere)
 
-</td>
-<td valign="top">
+**Real issue hit:** CodeBuild failing due to missing IAM permissions for ECR push — traced via CloudWatch Logs, fixed with precise policy addition.
 
-**Serverless & Messaging**
-- AWS Lambda
-- API Gateway
-- SNS / SQS
-- CloudFormation
+</details>
 
-</td>
-<td valign="top">
+<details>
+<summary><b>📊 Lab 05 — CloudWatch Monitoring & Lambda Automation</b></summary>
 
-**Observability**
-- CloudWatch
-- CloudTrail
-- AWS CLI
+Infrastructure observability and automated cost response:
+- CloudWatch alarms on CPU, memory, and billing thresholds
+- SNS topic for alert routing to email
+- Lambda function triggered by CloudWatch Events to stop idle EC2 instances
+- IAM execution role scoped to minimum required permissions
 
-</td>
-</tr>
-</table>
+</details>
 
----
+<details>
+<summary><b>☸️ Lab 06 — Amazon EKS + ALB Ingress Controller</b></summary>
 
-## 📈 Learning Objectives
+Production Kubernetes cluster setup on AWS:
+- EKS cluster provisioned with managed node groups
+- IAM OIDC provider configured for service account-level AWS permissions
+- AWS Load Balancer Controller installed via Helm
+- Ingress resource routing HTTP traffic to backend services inside cluster
 
-- [ ] Build strong AWS fundamentals across 6+ service categories
-- [ ] Understand cloud networking end-to-end (VPC → DNS → Load Balancing)
-- [ ] Apply AWS security best practices (IAM, NACLs, SGs, Bastion)
-- [ ] Deploy serverless and event-driven architectures (Lambda, SQS, SNS)
-- [ ] Write infrastructure-as-code with CloudFormation
-- [ ] Develop real troubleshooting instincts through hands-on failures
-- [ ] Build a documented portfolio that demonstrates cloud engineering depth
+**Real issue hit:** ALB controller pods in CrashLoopBackOff — cause was incorrect OIDC trust policy. Fixed by regenerating the service account annotation with the correct cluster OIDC URL.
+
+</details>
+
+<details>
+<summary><b>🏗 Lab 07 — Terraform Infrastructure as Code</b></summary>
+
+Entire AWS infrastructure defined as code using Terraform:
+- VPC, subnets, internet gateway, route tables — all as `.tf` resources
+- EC2 instances with security groups
+- ALB with target group and listener rules
+- Remote state stored in S3 with DynamoDB locking
+- Modular structure — reusable across environments
+
+**Real issue hit:** State file lock not released after failed apply — resolved with `terraform force-unlock` and understanding why locking exists.
+
+</details>
 
 ---
 
-## 🚀 Lab 01 Highlight — VPC & Network ACLs
+## 🛠 Tech Stack
 
-> The foundation of everything in AWS. Before EC2 can talk to the internet, before load balancers can route traffic, before RDS can accept a connection — networking has to be right.
+```yaml
+Cloud Provider:     AWS (primary)
+OS / Shell:         Ubuntu Linux · Bash
+IaC:                Terraform
+Containers:         Docker · Amazon ECR
+Orchestration:      Kubernetes · Amazon EKS · Helm
+CI/CD:              AWS CodePipeline · CodeBuild · CodeDeploy
+Monitoring:         Amazon CloudWatch · SNS · Lambda
+Security:           IAM · Security Groups · NACL · Parameter Store
+Version Control:    Git · GitHub
+Scripting:          Bash · Python
+```
 
-**What was built:**
-- Custom VPC with public and private subnets across 2 AZs
-- Internet Gateway attached and route tables configured
-- Network ACLs layered on top of Security Groups
-- Tested inbound/outbound traffic rules with real EC2 instances
+---
 
-📁 [View Lab 01 →](./01-VPC-NACL/)
+## 📊 AWS Services Coverage Map
+
+```
+NETWORKING          COMPUTE             STORAGE             SECURITY
+───────────         ───────────         ───────────         ───────────
+✅ VPC              ✅ EC2              ✅ S3               ✅ IAM
+✅ Subnets          ✅ Auto Scaling     ✅ ECR              ✅ IAM Roles
+✅ Internet GW      ✅ Launch Templates ✅ EBS              ✅ Security Groups
+✅ Route Tables     ✅ Bastion Host                         ✅ NACL
+✅ NAT Gateway      ✅ Lambda                               ✅ Parameter Store
+✅ ALB              ✅ EKS
+
+DEVOPS              MONITORING          CONTAINERS
+───────────         ───────────         ───────────
+✅ CodePipeline     ✅ CloudWatch        ✅ Docker
+✅ CodeBuild        ✅ CloudWatch Alarms ✅ Amazon EKS
+✅ CodeDeploy       ✅ SNS               ✅ Helm
+✅ Terraform        ✅ EventBridge       ✅ ALB Controller
+```
+
+---
+
+## 💡 Why This Repo Exists
+
+Most AWS learning online is theory-heavy — watch a video, click through the console, done. That doesn't translate to being useful on day one at a job.
+
+This repo was built with a different goal: **learn by deploying, breaking, and fixing real infrastructure**, and document everything the way a junior cloud engineer would in a real team.
+
+The objective isn't to have 7 green checkmarks. It's to understand *why* a NAT Gateway sits where it does, *why* CodeBuild needs that IAM permission, and *why* that OIDC trust policy broke the entire Kubernetes controller.
+
+That's the difference between someone who passed a cert and someone who can actually be useful on an SRE team.
+
+---
+
+## 🧭 Learning Path Followed
+
+```
+AWS Fundamentals → Networking (VPC) → Compute (EC2 + ASG) → Storage (S3)
+      ↓
+CI/CD (CodePipeline + Docker) → Monitoring (CloudWatch + Lambda)
+      ↓
+Containers (EKS + Helm + Ingress) → IaC (Terraform)
+      ↓
+Production Project (Three-Tier EKS) → [In Progress]
+```
+
+Course reference: [DevOps Zero to Hero — Abhishek Veeramalla](https://github.com/iam-veeramalla)
 
 ---
 
 <div align="center">
 
-**Built to learn. Documented to share. Designed to get hired.**
+---
 
-![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=flat&logo=amazonaws&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+**Built by [Shaurya Sehgal](https://github.com/shaurya-sehgal5)**
+BCA · UPES Dehradun · 
 
-*Learn → Build → Break → Fix → Document → Repeat*
+*Targeting DevOps / SRE / Cloud Engineer roles*
+
+---
+
+`Learn` → `Build` → `Break` → `Fix` → `Document` → `Repeat`
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=FF9900&height=80&section=footer" width="100%"/>
 
 </div>
