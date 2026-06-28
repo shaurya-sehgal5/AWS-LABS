@@ -1,11 +1,11 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/K8s%20Lab-01-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
+<img src="https://img.shields.io/badge/K8s%20Lab-06-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
 <img src="https://img.shields.io/badge/Amazon%20EKS-Cluster-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"/>
 <img src="https://img.shields.io/badge/ALB%20Ingress-Controller-0A66C2?style=for-the-badge&logo=amazonaws&logoColor=white"/>
 <img src="https://img.shields.io/badge/Status-Complete-28a745?style=for-the-badge"/>
 
-# ☸️ K8s Lab 01 — Amazon EKS with ALB Ingress Controller
+# ☸️ K8s Lab 06 — Amazon EKS with ALB Ingress Controller
 
 ### Provision an EKS cluster. Deploy an app. Wire Kubernetes Ingress to AWS ALB automatically. The full production K8s-on-AWS stack.
 
@@ -364,8 +364,6 @@ Kubernetes Service → Pod (2048 game)
 ---
 
 <div align="center">
-
-[Back to Lab Index](../README.md)
 
 *You didn't create an ALB. You declared desired state. The controller made it real.*
 
