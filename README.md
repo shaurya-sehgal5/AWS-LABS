@@ -3,7 +3,6 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=FF9900&height=120&section=header&text=AWS-LABS&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Production-Style%20Cloud%20Infrastructure%20Labs&descAlignY=60&descSize=16" width="100%"/>
 
 
-
 <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"/>
 <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
 <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white"/>
